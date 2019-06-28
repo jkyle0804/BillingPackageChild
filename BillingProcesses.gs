@@ -1,4 +1,6 @@
 function onOpen(e) {
+  var warning = SpreadsheetApp.getUi();
+  warning.alert('This invoice file is part of a test set. If you encounter problems please notify your admin.')
   BillingPackage.onOpen(e);
 } 
 function showSidebar() {

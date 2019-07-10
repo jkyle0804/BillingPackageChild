@@ -3,6 +3,9 @@ function onOpen(e) {
   warning.alert('This invoice file is part of a test set. If you encounter problems please notify your admin.')
   BillingPackage.onOpen(e);
 } 
+function startFunctions(){
+  BillingPackage.startFunctions();
+}  
 function showSidebar() {
   BillingPackage.showSidebar();
 }
@@ -48,3 +51,6 @@ function CopyTemplate() {
 function requirePassword(){
   BillingPackage.requirePassword();
 }
+function viewContract(){
+  BillingPackage.viewContract();
+}  

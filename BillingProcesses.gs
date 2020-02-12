@@ -1,56 +1,79 @@
 function onOpen(e) {
-  var warning = SpreadsheetApp.getUi();
-  warning.alert('This invoice file is part of a test set. If you encounter problems please notify your admin.')
-  BillingPackage.onOpen(e);
+BillingPackage.onOpen(e);
 } 
-function startFunctions(){
-  BillingPackage.startFunctions();
-}  
+
 function showSidebar() {
-  BillingPackage.showSidebar();
+BillingPackage.showSidebar();
 }
+
 function routeProcess(){
-  BillingPackage.routeProcess();
+BillingPackage.routeProcess();   
 }
+
 function approvalProcess( optSSId, optSheetId ){
-  BillingPackage.approvalProcess(optSSId, optSheetId);
-} 
-function userInput() {
-  BillingPackage.userInput();
+BillingPackage.approvalProcess();
 }
-function logData(billmonth, billyear, adjustment) {
-  BillingPackage.logData(billmonth, billyear, adjustment);
-}
-function savePDF( optSSId, optSheetId ) {
-  BillingPackage.savePDF(optSSId, optSheetId);
-}
-function moveBillingLogLineItem() {
-  BillingPackage.moveBillingLogLineItem();
-}
-function mergeTransactionData() {
-  BillingPackage.mergeTransactionData();
-}
-function importCustomerData() {
-  BillingPackage.importCustomerData();
-}
-function searchNumber() {
-  BillingPackage.searchNumber();
-}
-function specialSalesData() {
-  BillingPackage.specialSalesData();
-}
-function refreshCustomerData() {
-  BillingPackage.refreshCustomerData();
-}
+
 function createCancellation(){
-  BillingPackage.createCancellation();
+BillingPackage.createCancellation();
 }
-function CopyTemplate() {
-  BillingPackage.CopyTemplate();
+
+function logData(billmonth, billyear) {
+BillingPackage.logData();
 }
-function requirePassword(){
-  BillingPackage.requirePassword();
+
+function cancelInvoice(){
+BillingPackage.cancelInvoice();
 }
-function viewContract(){
-  BillingPackage.viewContract();
-}  
+
+function savePDF( optSSId, optSheetId ) {
+ BillingPackage.savePDF();
+}
+
+function moveBillingLogLineItem() {
+BillingPackage.moveBillingLogLineItem();
+}
+
+function importCustomerData() {
+BillingPackage.importCustomerData();
+}
+
+function searchNumber() {
+BillingPackage.searchNumber();
+  }
+
+function specialSalesData() {
+BillingPackage.specialSalesData();  
+}
+
+function setSpecialData(){
+BillingPackage.setSpecialData();
+}
+
+function refreshCustomerData() {
+BillingPackage.refreshCustomerData();
+}
+
+function resetSheet() {
+BillingPackage.resetSheet();
+}
+
+function pullBillingInfo() {
+BillingPackage.pulBillingInfo();
+}
+
+function createOneOff(){
+BillingPackage.createOneOff();
+}
+
+function assembleLineItems(){
+BillingPackage.assembleLineItems();
+}
+
+function viewInvoices(){
+BillingPackage.viewInvoices();
+}
+
+function buildHistoricalLineItem(){
+BillingPackage.buildHistoricalLineItem();
+}

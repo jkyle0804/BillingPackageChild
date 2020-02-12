@@ -10,7 +10,7 @@ function routeProcess(){
 BillingPackage.routeProcess();   
 }
 
-function approvalProcess( optSSId, optSheetId ){
+function approvalProcess(){
 BillingPackage.approvalProcess();
 }
 
@@ -26,7 +26,7 @@ function cancelInvoice(){
 BillingPackage.cancelInvoice();
 }
 
-function savePDF( optSSId, optSheetId ) {
+function savePDF() {
  BillingPackage.savePDF();
 }
 
@@ -59,7 +59,7 @@ BillingPackage.resetSheet();
 }
 
 function pullBillingInfo() {
-BillingPackage.pulBillingInfo();
+BillingPackage.pullBillingInfo();
 }
 
 function createOneOff(){
